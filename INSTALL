@@ -1,0 +1,15 @@
+REQUIREMENTS
+
+  - Python 2.6 or greater
+  - Django 1.2 or greater
+
+
+INSTALLATION
+
+  1. Add 'djzendesk' to INSTALLED_APPS
+
+  2. Add TODO to urls.py
+
+  3. Write signal handlers
+
+  4. Configure Zendesk triggers to POST to your web server

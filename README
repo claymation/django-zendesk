@@ -1,0 +1,3 @@
+django-zendesk is a Django application for handling HTTP target callbacks from Zendesk.
+
+For installation instructions, see the file "INSTALL" in this directory.
