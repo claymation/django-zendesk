@@ -46,6 +46,6 @@ def callback(request, ticket_id):
     logging.info("HTTP callback received from Zendesk for ticket %s: %s", ticket_id, message)
 
     # Fire the signal to notify listeners of received target callback
-    target_callback_received.send(sender=__name__, ticket_id=ticket_id, message=message)
+    target_callback_received.send(sender=None, ticket_id=ticket_id, message=message)
 
     return HttpResponse('OK')
