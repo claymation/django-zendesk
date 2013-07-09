@@ -8,8 +8,11 @@ INSTALLATION
 
   1. Add 'djzendesk' to INSTALLED_APPS
 
-  2. Add TODO to urls.py
+  2. Wire up the urls with something like:
+  
+     (r'^zendesk/', include('djzendesk.urls', namespace='zendesk', app_name='zendesk')),
 
-  3. Write signal handlers
+  3. Write signal handlers to catch the `target_callback_received` signal, emitted
+     whenever a valid POST is received from Zendesk
 
   4. Configure Zendesk triggers to POST to your web server
