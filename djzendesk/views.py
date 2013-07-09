@@ -12,7 +12,6 @@ def is_authenticated(request, username, password):
     """Authenticate the request using HTTP Basic authorization"""
     authenticated = False
     if 'HTTP_AUTHORIZATION' in request.META:
-        print request.META['HTTP_AUTHORIZATION']
         auth = request.META['HTTP_AUTHORIZATION'].split()
         if len(auth) == 2:
             if auth[0].lower() == "basic":
